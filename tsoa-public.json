@@ -1,0 +1,26 @@
+{
+  "entryFile": "src/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": [
+    "src/**/*.public.controller.ts"
+  ],
+  "spec": {
+    "name": "Some",
+    "outputDirectory": "dist/docs",
+    "specVersion": 3,
+    "specFileBaseName": "api.some.public",
+    "basePath": "some",
+    "license": "None",
+    "description": "Some",
+    "securityDefinitions": {
+      "jwt": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "routes": {
+    "routesDir": "dist/docs"
+  }
+}
